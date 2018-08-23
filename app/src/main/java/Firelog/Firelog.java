@@ -1,10 +1,24 @@
 package Firelog;
 
 
+/*
+*
+*   Classe que implementa o Log Firease
+*
+* */
+
+
 public class Firelog extends Firebase{
 
+
+    //  Propriedade que receberá a instancia da classe
     private Message message;
 
+    /*
+    *
+    *   Os métodos de cada tipo de log cria um objeto message com os valores do Log
+    *   e chama o método saveData da classe pai (Firebase)
+    * */
 
     @Override
     public void info(Object text) {
